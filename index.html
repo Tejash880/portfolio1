@@ -442,6 +442,228 @@
             line-height: 1.7;
         }
 
+        /* AutoGrade Stats */
+        .autograde-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .ag-stat {
+            background: linear-gradient(135deg, var(--off-white), var(--light-gray));
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .ag-stat:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .ag-stat-number {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--navy);
+            letter-spacing: -0.03em;
+        }
+
+        .ag-stat-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-top: 4px;
+        }
+
+        /* AI Pipeline */
+        .ai-pipeline {
+            background: var(--navy-deep);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            margin-bottom: 28px;
+            color: var(--white);
+        }
+
+        .pipeline-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .pipeline-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+
+        .pipeline-item {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius);
+            padding: 16px 12px;
+            text-align: center;
+            transition: background 0.2s ease;
+        }
+
+        .pipeline-item:hover {
+            background: rgba(255,255,255,0.12);
+        }
+
+        .pipeline-weight {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--gold);
+        }
+
+        .pipeline-name {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.8);
+            margin-top: 6px;
+        }
+
+        .pipeline-desc {
+            font-size: 0.6875rem;
+            color: rgba(255,255,255,0.45);
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        .pipeline-formula {
+            margin-top: 20px;
+            padding: 14px 20px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(201,169,89,0.25);
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8rem;
+            color: var(--gold);
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+
+        /* Feature Highlights */
+        .feature-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .feature-item {
+            background: var(--off-white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .feature-item:hover {
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-icon {
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-name {
+            font-size: 0.8125rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .feature-desc {
+            font-size: 0.8rem;
+            color: var(--dark-gray);
+            line-height: 1.5;
+        }
+
+        /* Codolio Section */
+        .codolio-section {
+            background: var(--off-white);
+        }
+
+        .codolio-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .codolio-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .codolio-header-left h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .codolio-header-left p {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .codolio-embed {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--off-white);
+        }
+
+        .codolio-embed iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        .codolio-stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .codolio-stat {
+            text-align: center;
+            padding: 16px;
+            background: var(--off-white);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .codolio-stat-num {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--navy);
+        }
+
+        .codolio-stat-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 2px;
+        }
+
         .project-footer {
             display: flex;
             justify-content: space-between;
@@ -749,6 +971,11 @@
             .project-narrative { grid-template-columns: 1fr; }
             .projects-grid { grid-template-columns: 1fr; }
             .achievements-grid { grid-template-columns: 1fr; }
+            .autograde-stats { grid-template-columns: repeat(2, 1fr); }
+            .pipeline-grid { grid-template-columns: repeat(2, 1fr); }
+            .feature-highlights { grid-template-columns: 1fr; }
+            .codolio-stats-row { grid-template-columns: repeat(2, 1fr); }
+            .codolio-header { flex-direction: column; align-items: flex-start; gap: 12px; }
 
             .footer-inner { flex-direction: column; gap: 32px; }
 
@@ -767,6 +994,11 @@
             .project-footer { flex-direction: column; gap: 16px; align-items: flex-start; }
             .project-card-footer { flex-direction: column; gap: 12px; align-items: flex-start; }
             .project-card .tech-badges { max-width: 100%; }
+            .autograde-stats { grid-template-columns: repeat(2, 1fr); }
+            .pipeline-grid { grid-template-columns: 1fr; }
+            .ai-pipeline { padding: 20px; }
+            .codolio-card { padding: 24px; }
+            .codolio-embed iframe { height: 400px; }
         }
 
         /* Subtle entrance animation */
@@ -794,7 +1026,7 @@
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#achievements">Achievements</a>
+            <a href="#achievements">Achievements</a>\r\n            <a href="#coding-activity">Coding Activity</a>
             <a href="#contact">Contact</a>
 
         </div>
@@ -943,6 +1175,27 @@
             <h3 class="featured-title">AutoGrade</h3>
             <p class="featured-subtitle">AI-Powered Descriptive Answer Evaluation System</p>
 
+            <!-- Stats Row -->
+            <div class="autograde-stats">
+                <div class="ag-stat">
+                    <div class="ag-stat-number">5</div>
+                    <div class="ag-stat-label">ML Models</div>
+                </div>
+                <div class="ag-stat">
+                    <div class="ag-stat-number">15+</div>
+                    <div class="ag-stat-label">API Endpoints</div>
+                </div>
+                <div class="ag-stat">
+                    <div class="ag-stat-number">2</div>
+                    <div class="ag-stat-label">User Roles</div>
+                </div>
+                <div class="ag-stat">
+                    <div class="ag-stat-number">50</div>
+                    <div class="ag-stat-label">Bulk Q Upload</div>
+                </div>
+            </div>
+
+            <!-- Problem / Approach / Result -->
             <div class="project-narrative">
                 <div class="narrative-block">
                     <h4>Problem</h4>
@@ -950,11 +1203,78 @@
                 </div>
                 <div class="narrative-block">
                     <h4>Approach</h4>
-                    <p>Built an AI pipeline combining Universal Sentence Encoder for semantic similarity, TF-IDF for lexical overlap, and Natural Language Inference for contradiction detection. Automated PDF extraction handles bulk submissions.</p>
+                    <p>Built a multi-signal AI pipeline combining Universal Sentence Encoder for deep semantic similarity, TF-IDF cosine for lexical overlap, Jaccard index for keyword matching, edit distance for structural similarity, and NLI-DeBERTa for contradiction detection — with automated PDF extraction for bulk submissions.</p>
                 </div>
                 <div class="narrative-block">
                     <h4>Result</h4>
-                    <p>A scalable role-based academic platform with teacher/student portals, classroom management, automated submissions, and intelligent grading workflows — reducing manual grading effort significantly.</p>
+                    <p>A scalable role-based academic platform with teacher/student portals, classroom management with invite codes, section-based assignments with deadlines, batch grading with real-time SSE streaming, analytics dashboards with leaderboards, and intelligent scoring workflows.</p>
+                </div>
+            </div>
+
+            <!-- AI Scoring Pipeline -->
+            <div class="ai-pipeline">
+                <div class="pipeline-title">⚡ AI Scoring Pipeline — Weighted Ensemble</div>
+                <div class="pipeline-grid">
+                    <div class="pipeline-item">
+                        <div class="pipeline-weight">70%</div>
+                        <div class="pipeline-name">Semantic (USE)</div>
+                        <div class="pipeline-desc">Universal Sentence Encoder deep embeddings</div>
+                    </div>
+                    <div class="pipeline-item">
+                        <div class="pipeline-weight">10%</div>
+                        <div class="pipeline-name">TF-IDF Cosine</div>
+                        <div class="pipeline-desc">Lexical overlap with n-gram weighting</div>
+                    </div>
+                    <div class="pipeline-item">
+                        <div class="pipeline-weight">10%</div>
+                        <div class="pipeline-name">Word Ratio</div>
+                        <div class="pipeline-desc">Answer completeness vs reference length</div>
+                    </div>
+                    <div class="pipeline-item">
+                        <div class="pipeline-weight">5%</div>
+                        <div class="pipeline-name">Jaccard</div>
+                        <div class="pipeline-desc">Keyword intersection over union</div>
+                    </div>
+                    <div class="pipeline-item">
+                        <div class="pipeline-weight">5%</div>
+                        <div class="pipeline-name">Edit Distance</div>
+                        <div class="pipeline-desc">Structural similarity via Levenshtein</div>
+                    </div>
+                </div>
+                <div class="pipeline-formula">score = 0.70·USE + 0.10·TF-IDF + 0.10·WordRatio + 0.05·Jaccard + 0.05·EditDist</div>
+            </div>
+
+            <!-- Platform Features -->
+            <div class="feature-highlights">
+                <div class="feature-item">
+                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-name">NLI Contradiction Guard</div>
+                    <div class="feature-desc">DeBERTa-v3-large NLI model detects factual contradictions — answers scoring &gt;60% contradiction probability are auto-flagged with zero marks.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📄</div>
+                    <div class="feature-name">Smart PDF Extraction</div>
+                    <div class="feature-desc">Auto-parses student PDFs into per-question answers using regex-based splitting, and teacher PDFs into Q&A pairs for bulk question import.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-name">Analytics Dashboard</div>
+                    <div class="feature-desc">Teacher analytics with per-question stats, section-wise performance, 5-bucket score distribution, student leaderboard, and submission rate tracking.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <div class="feature-name">Real-time Batch Grading</div>
+                    <div class="feature-desc">Server-Sent Events stream grading results question-by-question, giving students live progress feedback during bulk submissions.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏫</div>
+                    <div class="feature-name">Classroom Management</div>
+                    <div class="feature-desc">Teachers create classrooms with auto-generated invite codes, organize questions into deadline-bound sections, and track enrollments.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔄</div>
+                    <div class="feature-name">Upsert Submissions</div>
+                    <div class="feature-desc">Students can re-submit answers — the system updates scores in-place, preserving submission history and latest grades per question.</div>
                 </div>
             </div>
 
@@ -963,8 +1283,11 @@
                     <span class="tech-badge">Flask</span>
                     <span class="tech-badge">Python</span>
                     <span class="tech-badge">SQLAlchemy</span>
-                    <span class="tech-badge">TensorFlow Hub</span>
-                    <span class="tech-badge">NLP</span>
+                    <span class="tech-badge">TensorFlow Hub (USE)</span>
+                    <span class="tech-badge">DeBERTa-v3 NLI</span>
+                    <span class="tech-badge">scikit-learn</span>
+                    <span class="tech-badge">NLTK</span>
+                    <span class="tech-badge">SSE Streaming</span>
                     <span class="tech-badge">JavaScript</span>
                     <span class="tech-badge">HTML/CSS</span>
                 </div>
@@ -1049,6 +1372,51 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                     View Certificate
                 </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================================
+     CODOLIO CODING ACTIVITY
+     ================================ -->
+<section class="section codolio-section" id="coding-activity">
+    <div class="container fade-up">
+        <div class="section-line"></div>
+        <h2 class="section-title">Coding Activity</h2>
+        <p class="section-subtitle">Consistent problem-solving tracked across platforms via Codolio</p>
+
+        <div class="codolio-card">
+            <div class="codolio-header">
+                <div class="codolio-header-left">
+                    <h3>📅 Codolio Profile — Contribution Calendar</h3>
+                    <p>Daily problem-solving activity across LeetCode, CodeChef, Codeforces &amp; more</p>
+                </div>
+                <a href="https://codolio.com/profile/Tejash" target="_blank" class="btn-project">
+                    View Full Profile
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+            </div>
+            <div class="codolio-embed">
+                <iframe src="https://codolio.com/profile/Tejash" title="Codolio Profile — Tejash" loading="lazy"></iframe>
+            </div>
+            <div class="codolio-stats-row">
+                <div class="codolio-stat">
+                    <div class="codolio-stat-num">1,000+</div>
+                    <div class="codolio-stat-label">Problems Solved</div>
+                </div>
+                <div class="codolio-stat">
+                    <div class="codolio-stat-num">4+</div>
+                    <div class="codolio-stat-label">Platforms</div>
+                </div>
+                <div class="codolio-stat">
+                    <div class="codolio-stat-num">Daily</div>
+                    <div class="codolio-stat-label">Consistency</div>
+                </div>
+                <div class="codolio-stat">
+                    <div class="codolio-stat-num">Active</div>
+                    <div class="codolio-stat-label">Current Streak</div>
+                </div>
             </div>
         </div>
     </div>
